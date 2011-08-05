@@ -1,0 +1,10 @@
+#body {font-size:9pt;}
+
+BODY.index {color:green;background-color:#ccffdd;}
+
+A {color:#ffffff;text-decoration:none;cursor:crosshair}
+
+A:link { color:#339966; }
+A:visited { color:#66cc99; }
+A:active { color:#0000ff; }
+A:hover { color:#ee66ff; }
