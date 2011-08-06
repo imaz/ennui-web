@@ -1,18 +1,63 @@
 <html>
 
 <head>
-	<META http-equiv="Content-Type" content="text/html" charset="UTF-8">
-	<META http-equiv="Content-Style-Type" content="text/css">
-	<META http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
-	<LINK REL="STYLESHEET" href="./css/base.css" TYPE="text/css">
-	<title>pomodoro timer</title>
-	<script type="text/javascript" src="./js/pomodoro.js"></script>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
+	<link rel="stylesheet" href="./css/base.css" type="text/css">
+	<title>code breaker</title>
+	<script type="text/javascript" src="./js/codebreaker.js"></script>
 </head>
 
-<body class="index">
-  <span id="timerStatus">停止中</span><br /><br />
-  <input type="button" value="Start" onclick="startTimer()" /><br />
-  <span id="pomoCount">0</span><span id="pomoMessage">ポモ。</span>
+<body class="codebreaker" onLoad="createCode()">
+  <div class="inputForm">
+    <form name="inputForm">
+      0　<input type="radio" name="radio1" value="0" checked="checked">
+         <input type="radio" name="radio2" value="0" checked="checked">
+         <input type="radio" name="radio3" value="0" checked="checked"> 
+         <input type="radio" name="radio4" value="0" checked="checked"> <br />
+      1　<input type="radio" name="radio1" value="1"> 
+         <input type="radio" name="radio2" value="1"> 
+         <input type="radio" name="radio3" value="1"> 
+         <input type="radio" name="radio4" value="1"> <br />
+      2　<input type="radio" name="radio1" value="2"> 
+         <input type="radio" name="radio2" value="2"> 
+         <input type="radio" name="radio3" value="2"> 
+         <input type="radio" name="radio4" value="2"> <br />
+      3　<input type="radio" name="radio1" value="3"> 
+         <input type="radio" name="radio2" value="3"> 
+         <input type="radio" name="radio3" value="3"> 
+         <input type="radio" name="radio4" value="3"> <br />
+      4　<input type="radio" name="radio1" value="4"> 
+         <input type="radio" name="radio2" value="4"> 
+         <input type="radio" name="radio3" value="4"> 
+         <input type="radio" name="radio4" value="4"> <br />
+      5　<input type="radio" name="radio1" value="5"> 
+         <input type="radio" name="radio2" value="5"> 
+         <input type="radio" name="radio3" value="5"> 
+         <input type="radio" name="radio4" value="5"> <br />
+      6　<input type="radio" name="radio1" value="6"> 
+         <input type="radio" name="radio2" value="6"> 
+         <input type="radio" name="radio3" value="6"> 
+         <input type="radio" name="radio4" value="6"> <br />
+      7　<input type="radio" name="radio1" value="7"> 
+         <input type="radio" name="radio2" value="7"> 
+         <input type="radio" name="radio3" value="7"> 
+         <input type="radio" name="radio4" value="7"> <br />
+      8　<input type="radio" name="radio1" value="8"> 
+         <input type="radio" name="radio2" value="8"> 
+         <input type="radio" name="radio3" value="8"> 
+         <input type="radio" name="radio4" value="8"> <br />
+      9　<input type="radio" name="radio1" value="9"> 
+         <input type="radio" name="radio2" value="9"> 
+         <input type="radio" name="radio3" value="9"> 
+         <input type="radio" name="radio4" value="9"> <br />
+      <input type="button" value="CHECK" onClick="checkCode()"> <br />
+    </form>
+  </div>  
+  <div class="codeLog" id="codeLog">
+    (｀・ω・´)さああててごらんぼくのしょうたいを！
+  </div>
 </body>
 
 </html>
