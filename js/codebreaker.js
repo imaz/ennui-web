@@ -9,7 +9,7 @@ function setText(id,str){
 }
 
 function getText(id){
-  return(window.document.getElementById(id).innerHTML;
+  return(window.document.getElementById(id).innerHTML);
 }
 
 function textColoring(str,color){
@@ -40,7 +40,7 @@ function hit(ans,code){
   for(i=0;i<4;i++){
     if(code[i] == ans[i]){
       code[i] = 'x';
-      ans[y] = 'y';
+      ans[i] = 'y';
       hit++;
     }
   }
@@ -76,7 +76,7 @@ function initializeCode(){
   while(i!=4){
     c = 0;
     c = Math.floor(Math.random()*10);
-    if(Array.indexOf(answerCode,c) == -1){
+    if(answerCode.indexOf(c) == -1){
       answerCode[i] = c;
       i++;
     }
