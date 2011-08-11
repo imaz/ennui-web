@@ -88,8 +88,8 @@ function createCode(){
   initializeCode();
 }
 
-function reset(){
-  //これが呼ばれていない感じ
+function resetGame(){
+  //どうやらreset()はフォームを初期化する関数として用意されているようだ。関数名変えたらいけた！
   initializeCode();
   setText("codeLog","");
 }
