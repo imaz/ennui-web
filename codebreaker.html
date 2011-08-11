@@ -4,12 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<meta http-equiv="Content-Style-Type" content="text/css">
 	<meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
-	<link rel="stylesheet" href="./css/base.css" type="text/css">
 	<title>code breaker</title>
+	<link type="text/css" rel="stylesheet" href="./css/codebreaker.css">
+	<link type="image/gif" rel="shortcut icon" href="./image/codebreaker.favicon">
 	<script type="text/javascript" src="./js/codebreaker.js"></script>
 </head>
 
-<body class="codebreaker" onLoad="createCode()">
+<body onLoad="createCode()">
   <div class="inputForm">
     <form name="inputForm">
       0　<input type="radio" name="radio1" value="0" checked="checked">
@@ -53,10 +54,13 @@
          <input type="radio" name="radio3" value="9"> 
          <input type="radio" name="radio4" value="9"> <br />
       <input type="button" value="CHECK" onClick="checkCode()"> <br />
+      <input type="button" value="reset" onClick="reset()"> <br />
     </form>
   </div>  
-  <div class="codeLog" id="codeLog">
-    (｀・ω・´)さああててごらんぼくのしょうたいを！
+  <div id="codeLog">
+    (｀・ω・´)
+  </div>
+  <div id="debug">
   </div>
 </body>
 
