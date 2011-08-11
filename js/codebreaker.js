@@ -89,7 +89,7 @@ function createCode(){
 }
 
 function resetGame(){
-  //どうやらreset()はフォームを初期化する関数として用意されているようだ。関数名変えたらいけた！
   initializeCode();
   setText("codeLog","");
+  window.document.inputForm.reset();
 }
