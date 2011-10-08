@@ -18,7 +18,8 @@ function textColoring(str,color){
 }
 
 function getRadioValue(radioObject){
-  for(i=0; i<radioObject.length; i++){
+	var len = radioObject.length
+  for(i=0; i<len; i++){
     if(radioObject[i].checked){
       return(radioObject[i].value);
     }
@@ -37,7 +38,7 @@ function getCode(){
 
 function hit(ans,code){
   var hit = 0;
-  for(i=0;i<4;i++){
+  for(i=0; i<4; i++){
     if(code[i] == ans[i]){
       code[i] = 'x';
       ans[i] = 'y';
@@ -49,8 +50,8 @@ function hit(ans,code){
 
 function blow(ans,code){
   var blow = 0;
-  for(i=0;i<4;i++){
-    for(y=0;y<4;y++){
+  for(i=0; i<4; i++){
+    for(y=0; y<4; y++){
       if(code[i] == ans[y]){
         code[i] = 'x';
         ans[y] = 'y';
@@ -73,7 +74,7 @@ function checkCode(){
 function initializeCode(){
   answerCode = new Array(4);
   i=0;
-  while(i!=4){
+  while(i != 4){
     c = 0;
     c = Math.floor(Math.random()*10);
     if(answerCode.indexOf(c) == -1){
