@@ -89,7 +89,6 @@
   function createCode(){
     initializeCode();
   }
-  global.createCode = createCode;
 
   function resetGame(){
     initializeCode();
@@ -97,4 +96,10 @@
     window.document.inputForm.reset();
   }
   global.resetGame = resetGame;
+  
+  //addEventListener(event_type,handler)
+  window.addEventListener('load',function(){
+    createCode();
+  });
+
 }(window));
