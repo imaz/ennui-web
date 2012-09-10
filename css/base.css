@@ -2,6 +2,9 @@
 
 BODY.index {color:green;background-color:#ccffdd;}
 
+BODY.badge {color:#333333;background-color:#dddddd;}
+.badge IMG {margin:5px;}
+
 A {color:#ffffff;text-decoration:none;cursor:crosshair}
 
 A:link { color:#339966; }
